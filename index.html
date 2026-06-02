@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Duque | Portfolio</title>
+		<meta name="description" content="Portfolio profesional: UI/UX, Front-End y proyectos." />
+		<link rel="preconnect" href="https://www.youtube.com" />
+		<link rel="preconnect" href="https://i.ytimg.com" />
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="brand" href="#home" aria-label="Ir al inicio">
+				<img
+					class="brand__logo"
+					src="./imagenes/DUQUE 2 3.png"
+					alt="Duque"
+					loading="eager"
+					decoding="async"
+					onload="this.classList.add('is-loaded')"
+					onerror="this.style.display = 'none'"
+				/>
+				<span class="brand__mark"><span class="brand__markAccent">D</span>UQUE</span>
+			</a>
+
+			<nav class="nav" aria-label="Navegación principal">
+				<a class="nav__link" href="#about">ABOUT ME</a>
+				<a class="nav__link" href="#projects">PROJECT</a>
+				<a class="nav__link" href="#contact">CONTACT</a>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home" class="section hero">
+				<div class="hero__bg" aria-hidden="true">
+					<svg class="hero__waves" viewBox="0 0 1440 560" preserveAspectRatio="none">
+						<path
+							d="M-40 120 C 120 40, 300 200, 480 140 C 660 80, 740 160, 940 130 C 1140 100, 1230 210, 1520 90"
+							fill="none"
+							stroke="rgba(255, 64, 64, 0.55)"
+							stroke-width="2.5"
+						/>
+						<path
+							d="M-60 170 C 140 90, 320 250, 520 190 C 720 130, 780 220, 980 190 C 1180 160, 1290 260, 1560 140"
+							fill="none"
+							stroke="rgba(255, 64, 64, 0.35)"
+							stroke-width="2.25"
+						/>
+						<path
+							d="M-80 220 C 120 140, 330 300, 540 240 C 750 180, 820 270, 1020 240 C 1220 210, 1310 310, 1580 190"
+							fill="none"
+							stroke="rgba(255, 64, 64, 0.25)"
+							stroke-width="2"
+						/>
+						<path
+							d="M-100 270 C 120 190, 360 340, 580 290 C 800 240, 860 320, 1080 290 C 1300 260, 1360 360, 1600 250"
+							fill="none"
+							stroke="rgba(255, 64, 64, 0.18)"
+							stroke-width="1.8"
+						/>
+					</svg>
+				</div>
+
+				<div class="container hero__content">
+					<div class="hero__copy">
+						<p class="kicker">UI/UX · Front-End · Prototipado</p>
+						<h1 class="hero__title">I don’t just design interfaces, I design understanding</h1>
+						<p class="hero__subtitle">
+							Diseño experiencias digitales enfocadas en claridad, accesibilidad y resultados. Desarrollo interfaces
+							modernas con atención al detalle.
+						</p>
+
+						<div class="hero__cta">
+							<a class="btn btn--primary" href="#projects">Ver proyectos</a>
+							<a class="btn btn--ghost" href="#contact">Hablemos</a>
+						</div>
+
+						<div class="hero__media" aria-label="Video de presentación">
+							<div class="video">
+								<iframe
+									class="video__iframe"
+									src="https://www.youtube.com/embed/M7lc1UVf-VE?rel=0&modestbranding=1"
+									title="Video de YouTube"
+									loading="lazy"
+									frameborder="0"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allow="
+										accelerometer;
+										autoplay;
+										clipboard-write;
+										encrypted-media;
+										gyroscope;
+										picture-in-picture;
+										web-share;
+									"
+									allowfullscreen
+								></iframe>
+							</div>
+							<p class="hero__mediaHint">Cambia el enlace del video en index.html por tu YouTube (ID o URL embed).</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" aria-label="Servicios">
+				<div class="container">
+					<h2 class="section__title">Services</h2>
+					<div class="grid grid--4">
+						<article class="card">
+							<h3 class="card__title">Front Dev</h3>
+							<p class="card__text">Interfaces rápidas y responsivas con HTML, CSS y JavaScript.</p>
+						</article>
+						<article class="card">
+							<h3 class="card__title">Prototyping</h3>
+							<p class="card__text">Wireframes y prototipos interactivos para validar ideas.</p>
+						</article>
+						<article class="card">
+							<h3 class="card__title">UX/UI Design</h3>
+							<p class="card__text">Diseño centrado en el usuario, accesible y consistente.</p>
+						</article>
+						<article class="card">
+							<h3 class="card__title">Interactive Design</h3>
+							<p class="card__text">Microinteracciones y animaciones sutiles con intención.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="section section--muted">
+				<div class="container">
+					<h2 class="section__title">About me</h2>
+					<div class="split">
+						<div class="split__main">
+							<p class="lead">
+								I’m an Interactive Media Design student specializing in UI design and front-end development. I focus on
+								crafting clear, functional, and user-centered digital experiences. I analyze how users interact with
+								digital products and transform those insights into intuitive interfaces and functional prototypes. By
+								combining design thinking, usability principles, and development, I bridge the gap between ideas and
+								implementation—turning concepts into effective digital solutions.
+							</p>
+							<div class="grid grid--2">
+								<div class="list">
+									<h3 class="list__title">UI/UX Skills</h3>
+									<ul class="list__items">
+										<li>Visual Design</li>
+										<li>Wireframing & Prototyping</li>
+										<li>User Research</li>
+										<li>Interaction Design</li>
+									</ul>
+								</div>
+								<div class="list">
+									<h3 class="list__title">Front-End</h3>
+									<ul class="list__items">
+										<li>HTML / CSS / JavaScript</li>
+										<li>Responsive layout</li>
+										<li>Accesibilidad</li>
+										<li>Performance</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<aside class="split__aside">
+							<div class="portrait">
+								<img
+									class="portrait__img"
+									src="./imagenes/foto%20daniel%20.png"
+									alt="Foto de Daniel"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="section">
+				<div class="container">
+					<h2 class="section__title">Projects</h2>
+					<p class="section__subtitle">Algunos proyectos en los que he trabajado</p>
+
+					<div class="grid grid--2">
+						<a class="project" href="#" aria-label="Proyecto Planea">
+							<div class="project__media project__media--blue">Planea</div>
+							<div class="project__meta">
+								<h3 class="project__title">Planea</h3>
+								<p class="project__text">Organiza, proyecta y avanza.</p>
+							</div>
+						</a>
+						<a class="project" href="#" aria-label="Proyecto Emprende U">
+							<div class="project__media project__media--navy">Emprende U</div>
+							<div class="project__meta">
+								<h3 class="project__title">Emprende U</h3>
+								<p class="project__text">Marketplace y gamificación para estudiantes.</p>
+							</div>
+						</a>
+						<a class="project" href="#" aria-label="Proyecto LFF Educa">
+							<div class="project__media project__media--teal">LFF Educa</div>
+							<div class="project__meta">
+								<h3 class="project__title">LFF Educa</h3>
+								<p class="project__text">Educación bilingüe desde la base.</p>
+							</div>
+						</a>
+						<a class="project" href="#" aria-label="Proyecto Steam">
+							<div class="project__media project__media--indigo">Steam</div>
+							<div class="project__meta">
+								<h3 class="project__title">Steam</h3>
+								<p class="project__text">Diseño de interfaz y componentes.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section section--muted">
+				<div class="container contact">
+					<h2 class="section__title">Let’s work together</h2>
+					<p class="section__subtitle">Si tienes una idea, la llevamos a producto.</p>
+
+					<div class="contact__actions">
+						<a class="btn btn--primary" href="mailto:Alejandro.murillas04@gmail.com">Enviar email</a>
+						<a
+							class="btn btn--ghost"
+							href="https://www.linkedin.com/in/daniel-duque-9711aa253"
+							target="_blank"
+							rel="noreferrer"
+							>LinkedIn</a
+						>
+						<a class="btn btn--ghost" href="https://www.behance.net/alejandroduque10" target="_blank" rel="noreferrer"
+							>Behance</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__inner">
+				<small>© <span id="year"></span> Duque. Todos los derechos reservados.</small>
+				<a class="footer__top" href="#home">Volver arriba</a>
+			</div>
+		</footer>
+
+		<script>
+			document.getElementById('year').textContent = String(new Date().getFullYear());
+		</script>
+	</body>
+</html>
