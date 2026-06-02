@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Emprende U | Proyecto</title>
+		<meta name="description" content="Caso de estudio: Emprende U. By students, for students." />
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./emprende-u.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="brand" href="./index.html#home" aria-label="Ir al inicio">
+				<img
+					class="brand__logo"
+					src="./imagenes/DUQUE 2 3.png"
+					alt="Duque"
+					loading="eager"
+					decoding="async"
+					onload="this.classList.add('is-loaded')"
+					onerror="this.style.display = 'none'"
+				/>
+				<span class="brand__mark"><span class="brand__markAccent">D</span>UQUE</span>
+			</a>
+			<nav class="nav" aria-label="Navegación principal">
+				<a class="nav__link" href="./index.html#about">ABOUT ME</a>
+				<a class="nav__link" href="./index.html#projects">PROJECT</a>
+				<a class="nav__link" href="./index.html#contact">CONTACT</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="section hero projectPage__hero">
+				<div class="container projectPage__heroInner">
+					<div class="projectPage__heroCopy">
+						<p class="kicker">Caso de estudio</p>
+						<h1 class="hero__title">Emprende U</h1>
+						<p class="hero__subtitle">By students, for students.</p>
+						<div class="hero__cta">
+							<a class="btn btn--primary" href="./index.html#projects">Volver a proyectos</a>
+							<a class="btn btn--ghost" href="./index.html#contact">Hablemos</a>
+						</div>
+					</div>
+					<div class="projectPage__heroCard">
+						<div class="projectPage__badge project__media--navy">Emprende U</div>
+						<div class="projectPage__facts">
+							<div class="card">
+								<h3 class="card__title">Rol</h3>
+								<p class="card__text">UI/UX · Interacción · Sistema de componentes</p>
+							</div>
+							<div class="card">
+								<h3 class="card__title">Enfoque</h3>
+								<p class="card__text">Marketplace + comunidad</p>
+							</div>
+							<div class="card">
+								<h3 class="card__title">Estado</h3>
+								<p class="card__text">Concepto / Prototipo</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container projectPage__content">
+					<div class="projectPage__twoCol">
+						<article class="panel">
+							<h2 class="section__title">Problema</h2>
+							<p class="panel__text">
+								Los estudiantes tienen ideas y talento, pero les cuesta vender, validar y dar visibilidad a sus productos
+								y servicios.
+							</p>
+						</article>
+						<article class="panel">
+							<h2 class="section__title">Solución</h2>
+							<p class="panel__text">
+								Una app que integra marketplace, cupones y gamificación para incentivar la participación y el crecimiento
+								de microemprendimientos.
+							</p>
+						</article>
+					</div>
+
+					<article class="panel">
+						<h2 class="section__title">Funcionalidades</h2>
+						<div class="grid grid--3">
+							<div class="list">
+								<h3 class="list__title">Marketplace</h3>
+								<ul class="list__items">
+									<li>Publicación de productos</li>
+									<li>Listado y búsqueda</li>
+									<li>Perfil del vendedor</li>
+								</ul>
+							</div>
+							<div class="list">
+								<h3 class="list__title">Cupones</h3>
+								<ul class="list__items">
+									<li>Promos</li>
+									<li>Códigos</li>
+									<li>Beneficios</li>
+								</ul>
+							</div>
+							<div class="list">
+								<h3 class="list__title">Gamificación</h3>
+								<ul class="list__items">
+									<li>Insignias</li>
+									<li>Misiones</li>
+									<li>Ranking</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__inner">
+				<small>© <span id="year"></span> Duque. Todos los derechos reservados.</small>
+				<a class="footer__top" href="./index.html#projects">Volver a proyectos</a>
+			</div>
+		</footer>
+
+		<script>
+			document.getElementById('year').textContent = String(new Date().getFullYear());
+		</script>
+	</body>
+</html>
