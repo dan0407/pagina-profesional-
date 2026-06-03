@@ -1,201 +1,279 @@
-/* Steam page-specific styles */
 :root {
   color-scheme: dark;
 }
 
-body {
-  background: #1861d8;
+body.project--steam {
+  background: #2b67d1;
+  color: rgba(255, 255, 255, 0.92);
 }
 
-.projectPage__hero {
-  padding: 80px 0 60px;
-  background: linear-gradient(180deg, #1e6ce8 0%, #0f4bb2 100%);
+.project--steam .steamPage {
+  padding: 54px 0 92px;
 }
 
-.hero__grid {
+.project--steam .steamSheet {
+  width: min(980px, calc(100% - 44px));
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: center;
+  gap: 64px;
 }
 
-.hero__visual {
+.project--steam .steamRow {
   display: grid;
-  gap: 20px;
-}
-
-.hero__visualBadge {
-  width: fit-content;
-  padding: 14px 22px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.hero__visualFrame {
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: var(--shadow);
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.hero__visualFrame img,
-.projectPage__imageCard img,
-.projectPage__proposalImages img,
-.projectPage__gallery img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.section__text,
-.panel__text {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.88);
-  line-height: 1.75;
-}
-
-.section--muted {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.projectPage__objective .panel,
-.projectPage__proposal .panel,
-.projectPage__problems,
-.projectPage__tableCard,
-.projectPage__learning .panel {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.projectPage__imageCard,
-.projectPage__proposalImages,
-.projectPage__gallery {
-  display: grid;
-  gap: 18px;
-}
-
-.projectPage__imageCard img,
-.projectPage__proposalImages img,
-.projectPage__gallery img {
-  border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: var(--shadow);
-  aspect-ratio: 16 / 10;
-}
-
-.projectPage__proposalImages {
-  grid-template-columns: 1fr 1fr;
-}
-
-.projectPage__gallery {
-  grid-template-columns: 1fr 1fr;
-}
-
-.profile__avatar {
-  width: 72px;
-  height: 72px;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  color: #0f4bb2;
-  background: #ffffff;
-  margin-bottom: 18px;
-}
-
-.projectPage__profile {
-  padding: 24px;
-}
-
-.projectPage__split {
-  display: grid;
-  grid-template-columns: 1.3fr 0.9fr;
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: 54px;
   align-items: start;
 }
 
-.projectPage__table {
+.project--steam .steamRow--hero {
+  align-items: center;
+}
+
+.project--steam .steamRow--paired {
+  align-items: start;
+}
+
+.project--steam .steamRow--impact {
+  gap: 28px 44px;
+}
+
+.project--steam .steamCol {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.project--steam .steamCol--center {
+  display: grid;
+  place-items: center;
+}
+
+.project--steam .steamCol--full {
+  grid-column: 1 / -1;
+}
+
+.project--steam .steamTitle {
+  margin: 0 0 16px 0;
+  font-size: clamp(30px, 3.4vw, 42px);
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+}
+
+.project--steam .steamHeading {
+  margin: 0 0 14px 0;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.project--steam .steamText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
+  font-size: 14px;
+  max-width: 60ch;
+}
+
+.project--steam .steamList {
+  margin: 14px 0 0 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.75;
+  font-size: 14px;
+}
+
+.project--steam .steamLogo {
+  width: min(220px, 62vw);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+
+.project--steam .steamLogo--end {
+  width: min(260px, 70vw);
+}
+
+.project--steam .steamLogo__img {
   width: 100%;
-  border-collapse: collapse;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+  mix-blend-mode: screen;
 }
 
-.projectPage__table th,
-.projectPage__table td {
-  padding: 12px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  text-align: left;
-  color: rgba(255, 255, 255, 0.86);
+.project--steam .steamMock {
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  max-width: 100%;
 }
 
-.projectPage__table th {
+.project--steam .steamMock--photo {
+  justify-self: end;
+  max-width: 520px;
+}
+
+.project--steam .steamMock--persona {
+  justify-self: start;
+  max-width: 460px;
+}
+
+.project--steam .steamMock--chart {
+  justify-self: end;
+  max-width: 380px;
+}
+
+.project--steam .steamMock--interface {
+  justify-self: start;
+  max-width: 640px;
+}
+
+.project--steam .steamMock--proposal {
+  margin-top: 18px;
+  max-width: 380px;
+  justify-self: end;
+}
+
+.project--steam .steamMock--learning {
+  justify-self: end;
+  max-width: 640px;
+}
+
+.project--steam .steamMock__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+}
+
+.project--steam .steamMock--persona .steamMock__img {
+  object-fit: contain;
+}
+
+.project--steam .steamMock--proposal {
+  height: 240px;
+  overflow: hidden;
+}
+
+.project--steam .steamMock--proposal .steamMock__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right top;
+}
+
+.project--steam .steamMock--learning {
+  height: 240px;
+  overflow: hidden;
+}
+
+.project--steam .steamMock--learning .steamMock__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+}
+
+.project--steam .steamMock--interface .steamMock__img {
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.project--steam .steamCard {
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(12, 26, 56, 0.12);
+  box-shadow: none;
+  padding: 18px;
+  color: #0b1a33;
+}
+
+.project--steam .steamCard__title {
+  margin: 0 0 12px 0;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 800;
+  color: #1f57c9;
+}
+
+.project--steam .steamTable {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.project--steam .steamTable th,
+.project--steam .steamTable td {
+  padding: 12px 12px;
+  border: 1px solid rgba(12, 26, 56, 0.12);
+  text-align: left;
+  color: rgba(11, 26, 51, 0.86);
+  font-size: 13px;
+}
+
+.project--steam .steamTable th {
+  text-transform: uppercase;
+  font-size: 11px;
   letter-spacing: 0.12em;
+  color: rgba(11, 26, 51, 0.72);
+  background: rgba(43, 103, 209, 0.08);
 }
 
-.projectPage__proposalImages img {
-  aspect-ratio: 16 / 9;
-}
-
-.projectPage__learning {
-  gap: 24px;
-}
-
-.projectPage__impact {
-  padding: 32px 0 24px;
-}
-
-.footer {
+.project--steam .footer {
   background: rgba(0, 0, 0, 0.16);
 }
 
-@media (max-width: 980px) {
-  .hero__grid,
-  .grid--2,
-  .projectPage__split,
-  .projectPage__proposal,
-  .projectPage__learning,
-  .projectPage__proposalImages,
-  .projectPage__gallery {
+@media (max-width: 900px) {
+  .project--steam .steamRow {
     grid-template-columns: 1fr;
   }
 
-  .projectPage__proposalImages img,
-  .projectPage__gallery img {
-    aspect-ratio: 4 / 3;
+  .project--steam .steamCol--full {
+    grid-column: auto;
   }
 }
 
 @media (max-width: 620px) {
-  .hero__title {
-    font-size: clamp(32px, 8vw, 40px);
+  .project--steam .steamPage {
+    padding: 44px 0 76px;
   }
 
-  .hero__copy {
-    text-align: left;
+  .project--steam .steamSheet {
+    width: min(980px, calc(100% - 34px));
+    gap: 52px;
   }
 
-  .header {
-    gap: 10px;
+  .project--steam .steamRow {
+    gap: 26px;
   }
 
-  .nav {
-    gap: 8px;
+  .project--steam .steamMock--proposal {
+    max-width: 100%;
+    height: 220px;
   }
 
-  .nav__link {
-    padding: 9px 10px;
-    font-size: 11px;
+  .project--steam .steamMock--learning {
+    height: 220px;
   }
 
-  .projectPage__table th,
-  .projectPage__table td {
-    padding: 10px 12px;
+  .project--steam .steamTable th,
+  .project--steam .steamTable td {
+    padding: 10px 10px;
   }
 }
