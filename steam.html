@@ -1,123 +1,220 @@
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Steam | Proyecto</title>
-		<meta name="description" content="Caso de estudio: Steam. Diseño de interfaz y componentes." />
-		<link rel="stylesheet" href="./styles.css" />
-		<link rel="stylesheet" href="./steam.css" />
-	</head>
-	<body>
-		<header class="header">
-			<a class="brand" href="./index.html#home" aria-label="Ir al inicio">
-				<img
-					class="brand__logo"
-					src="./imagenes/DUQUE%202%203.png"
-					alt="Duque"
-					loading="eager"
-					decoding="async"
-					onload="this.classList.add('is-loaded')"
-					onerror="this.style.display = 'none'"
-				/>
-				<span class="brand__mark"><span class="brand__markAccent">D</span>UQUE</span>
-			</a>
-			<nav class="nav" aria-label="Navegación principal">
-				<a class="nav__link" href="./index.html#about">ABOUT ME</a>
-				<a class="nav__link" href="./index.html#projects">PROJECT</a>
-				<a class="nav__link" href="./index.html#contact">CONTACT</a>
-			</nav>
-		</header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Steam | Proyecto</title>
+        <meta name="description" content="Caso de estudio: Steam. Rediseño conceptual y UX." />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./steam.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="brand" href="./index.html#home" aria-label="Ir al inicio">
+                <img
+                    class="brand__logo"
+                    src="./imagenes/DUQUE%202%203.png"
+                    alt="Duque"
+                    loading="eager"
+                    decoding="async"
+                    onload="this.classList.add('is-loaded')"
+                    onerror="this.style.display = 'none'"
+                />
+                <span class="brand__mark"><span class="brand__markAccent">D</span>UQUE</span>
+            </a>
+            <nav class="nav" aria-label="Navegación principal">
+                <a class="nav__link" href="#about">ABOUT ME</a>
+                <a class="nav__link" href="#projects">PROJECT</a>
+                <a class="nav__link" href="#contact">CONTACT</a>
+            </nav>
+        </header>
 
-		<main>
-			<section class="section hero projectPage__hero">
-				<div class="container projectPage__heroInner">
-					<div class="projectPage__heroCopy">
-						<p class="kicker">Caso de estudio</p>
-						<h1 class="hero__title">Steam</h1>
-						<p class="hero__subtitle">Diseño de interfaz y componentes.</p>
-						<div class="hero__cta">
-							<a class="btn btn--primary" href="./index.html#projects">Volver a proyectos</a>
-							<a class="btn btn--ghost" href="./index.html#contact">Hablemos</a>
-						</div>
-					</div>
-					<div class="projectPage__heroCard">
-						<div class="projectPage__badge project__media--indigo">Steam</div>
-						<div class="projectPage__facts">
-							<div class="card">
-								<h3 class="card__title">Rol</h3>
-								<p class="card__text">UI/UX · Componentes · Interacción</p>
-							</div>
-							<div class="card">
-								<h3 class="card__title">Enfoque</h3>
-								<p class="card__text">Re-diseño visual y consistencia</p>
-							</div>
-							<div class="card">
-								<h3 class="card__title">Estado</h3>
-								<p class="card__text">Concepto / UI Kit</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <main>
+            <section class="section projectPage__hero">
+                <div class="container hero__grid">
+                    <div class="hero__copy">
+                        <p class="kicker">Caso de estudio</p>
+                        <h1 class="hero__title">Análisis y rediseño conceptual de Steam</h1>
+                        <p class="hero__subtitle">Evaluación de la experiencia de usuario y propuesta de mejoras basadas en investigación.</p>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__visualBadge">Steam</div>
+                        <div class="hero__visualFrame">
+                            <img src="./imagenes/steam/1.png" alt="Mockup conceptual de Steam" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<section class="section">
-				<div class="container projectPage__content">
-					<div class="projectPage__twoCol">
-						<article class="panel">
-							<h2 class="section__title">Objetivo</h2>
-							<p class="panel__text">
-								Crear una interfaz más limpia y consistente, con jerarquía visual clara y componentes reutilizables.
-							</p>
-						</article>
-						<article class="panel">
-							<h2 class="section__title">Entrega</h2>
-							<p class="panel__text">Sistema de componentes, pantallas clave y estilos para escalabilidad.</p>
-						</article>
-					</div>
+            <section id="about" class="section section--muted">
+                <div class="container">
+                    <h2 class="section__title">Descripción</h2>
+                    <p class="section__text">Un estudio UX enfocado en identificar problemas de usabilidad dentro de Steam y proponer soluciones estratégicas para mejorar la navegación, el descubrimiento y la experiencia de compra.</p>
+                </div>
+            </section>
 
-					<article class="panel">
-						<h2 class="section__title">Componentes</h2>
-						<div class="grid grid--3">
-							<div class="list">
-								<h3 class="list__title">Navegación</h3>
-								<ul class="list__items">
-									<li>Header</li>
-									<li>Tabs</li>
-									<li>Breadcrumbs</li>
-								</ul>
-							</div>
-							<div class="list">
-								<h3 class="list__title">Contenido</h3>
-								<ul class="list__items">
-									<li>Cards</li>
-									<li>Listas</li>
-									<li>Modales</li>
-								</ul>
-							</div>
-							<div class="list">
-								<h3 class="list__title">Acciones</h3>
-								<ul class="list__items">
-									<li>Botones</li>
-									<li>Inputs</li>
-									<li>Estados</li>
-								</ul>
-							</div>
-						</div>
-					</article>
-				</div>
-			</section>
-		</main>
+            <section class="section">
+                <div class="container projectPage__objective">
+                    <div class="grid grid--2">
+                        <article class="panel">
+                            <h2 class="section__title">Objetivo del proyecto</h2>
+                            <p class="section__text">Analizar la experiencia actual de Steam para detectar problemas de usabilidad y proponer mejoras que optimicen la interacción del usuario con la plataforma.</p>
+                        </article>
+                        <article class="projectPage__imageCard">
+                            <img src="./imagenes/steam/2.png" alt="Mockup de laptop con Steam" loading="lazy" />
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-		<footer class="footer">
-			<div class="container footer__inner">
-				<small>© <span id="year"></span> Duque. Todos los derechos reservados.</small>
-				<a class="footer__top" href="./index.html#projects">Volver a proyectos</a>
-			</div>
-		</footer>
+            <section class="section section--muted">
+                <div class="container">
+                    <h2 class="section__title">Investigación</h2>
+                    <p class="section__text">Se realizó un análisis de la interfaz actual de Steam, evaluando navegación, estructura de contenido y jerarquía visual para detectar oportunidades de mejora.</p>
+                    <div class="grid grid--2">
+                        <aside class="card projectPage__profile">
+                            <div class="profile__avatar">Sam</div>
+                            <h3 class="profile__name">Perfil 1: Sam</h3>
+                            <ul class="list__items">
+                                <li>Edad: 20-24 años</li>
+                                <li>Estudia Diseño / UX</li>
+                                <li>Uso frecuente de Steam</li>
+                                <li>Valora descubrimiento y claridad</li>
+                            </ul>
+                        </aside>
+                        <article class="card">
+                            <h3 class="list__title">Puntos clave</h3>
+                            <ul class="list__items">
+                                <li>Evaluación heurística</li>
+                                <li>Análisis de interfaz existente</li>
+                                <li>Identificación de pain points</li>
+                                <li>Benchmark de plataformas similares</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-		<script>
-			document.getElementById('year').textContent = String(new Date().getFullYear());
-		</script>
-	</body>
+            <section class="section">
+                <div class="container projectPage__split">
+                    <article class="panel projectPage__problems">
+                        <h2 class="section__title">Problemas</h2>
+                        <p class="section__text">Se detectaron múltiples fricciones que afectan la experiencia del usuario.</p>
+                        <ul class="list__items">
+                            <li>Interfaz saturada de información</li>
+                            <li>Baja jerarquía visual</li>
+                            <li>Navegación confusa</li>
+                            <li>Dificultad para descubrir juegos</li>
+                            <li>Exceso de elementos distractores</li>
+                        </ul>
+                    </article>
+                    <article class="card projectPage__tableCard">
+                        <h3 class="list__title">Errores de navegación</h3>
+                        <table class="projectPage__table">
+                            <thead>
+                                <tr>
+                                    <th>Grupo</th>
+                                    <th>Reducción</th>
+                                    <th>P-value</th>
+                                    <th>¿Mejora visible?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Todos</td>
+                                    <td>-57,71%</td>
+                                    <td>0,051</td>
+                                    <td>Sí</td>
+                                </tr>
+                                <tr>
+                                    <td>Jaime</td>
+                                    <td>-11,39%</td>
+                                    <td>0,061</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Sam</td>
+                                    <td>-27,80%</td>
+                                    <td>0,023</td>
+                                    <td>Sí</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section--muted">
+                <div class="container">
+                    <h2 class="section__title">Oportunidades</h2>
+                    <p class="section__text">A partir del análisis, se identificaron áreas clave de mejora para optimizar la experiencia.</p>
+                    <ul class="list__items">
+                        <li>Simplificación de la interfaz</li>
+                        <li>Mejor organización del contenido</li>
+                        <li>Navegación más intuitiva</li>
+                        <li>Enfoque en descubrimiento relevante</li>
+                        <li>Reducción de carga cognitiva</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container projectPage__proposal">
+                    <div class="grid grid--2">
+                        <article class="panel">
+                            <h2 class="section__title">Propuesta</h2>
+                            <p class="section__text">Se plantea un rediseño conceptual basado en principios de UX/UI que mejore la claridad visual, la navegación y la experiencia general del usuario.</p>
+                            <ul class="list__items">
+                                <li>Jerarquía visual clara</li>
+                                <li>Layout más limpio</li>
+                                <li>Enfoque en contenido relevante</li>
+                                <li>Flujo de navegación optimizado</li>
+                            </ul>
+                        </article>
+                        <aside class="projectPage__proposalImages">
+                            <img src="./imagenes/steam/3.png" alt="Propuesta Steam 1" loading="lazy" />
+                            <img src="./imagenes/steam/4.png" alt="Propuesta Steam 2" loading="lazy" />
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--muted">
+                <div class="container grid grid--2 projectPage__learning">
+                    <article class="panel">
+                        <h2 class="section__title">Aprendizajes</h2>
+                        <p class="section__text">Este proyecto permitió profundizar en el análisis de interfaces complejas y en la identificación de problemas de usabilidad a nivel estructural.</p>
+                        <ul class="list__items">
+                            <li>Importancia de la jerarquía visual</li>
+                            <li>Impacto de la sobrecarga de información</li>
+                            <li>Valor del análisis UX antes del diseño</li>
+                            <li>Pensamiento crítico en diseño</li>
+                        </ul>
+                    </article>
+                    <div class="projectPage__gallery grid grid--2">
+                        <img src="./imagenes/steam/5.png" alt="Aprendizaje Steam 1" loading="lazy" />
+                        <img src="./imagenes/steam/6.png" alt="Aprendizaje Steam 2" loading="lazy" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container projectPage__impact">
+                    <h2 class="section__title">Impacto</h2>
+                    <p class="section__text">El análisis permite entender cómo mejorar plataformas complejas como Steam, enfocándose en la experiencia del usuario y la optimización de la interacción.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <small>© <span id="year"></span> Duque. Todos los derechos reservados.</small>
+                <a class="footer__top" href="#about">Volver arriba</a>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('year').textContent = String(new Date().getFullYear());
+        </script>
+    </body>
 </html>

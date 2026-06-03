@@ -1,4 +1,201 @@
+/* Steam page-specific styles */
 :root {
   color-scheme: dark;
 }
 
+body {
+  background: #1861d8;
+}
+
+.projectPage__hero {
+  padding: 80px 0 60px;
+  background: linear-gradient(180deg, #1e6ce8 0%, #0f4bb2 100%);
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero__visual {
+  display: grid;
+  gap: 20px;
+}
+
+.hero__visualBadge {
+  width: fit-content;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero__visualFrame {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero__visualFrame img,
+.projectPage__imageCard img,
+.projectPage__proposalImages img,
+.projectPage__gallery img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.section__text,
+.panel__text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
+}
+
+.section--muted {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.projectPage__objective .panel,
+.projectPage__proposal .panel,
+.projectPage__problems,
+.projectPage__tableCard,
+.projectPage__learning .panel {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.projectPage__imageCard,
+.projectPage__proposalImages,
+.projectPage__gallery {
+  display: grid;
+  gap: 18px;
+}
+
+.projectPage__imageCard img,
+.projectPage__proposalImages img,
+.projectPage__gallery img {
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow);
+  aspect-ratio: 16 / 10;
+}
+
+.projectPage__proposalImages {
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectPage__gallery {
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile__avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: #0f4bb2;
+  background: #ffffff;
+  margin-bottom: 18px;
+}
+
+.projectPage__profile {
+  padding: 24px;
+}
+
+.projectPage__split {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.projectPage__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projectPage__table th,
+.projectPage__table td {
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: left;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.projectPage__table th {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.projectPage__proposalImages img {
+  aspect-ratio: 16 / 9;
+}
+
+.projectPage__learning {
+  gap: 24px;
+}
+
+.projectPage__impact {
+  padding: 32px 0 24px;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 980px) {
+  .hero__grid,
+  .grid--2,
+  .projectPage__split,
+  .projectPage__proposal,
+  .projectPage__learning,
+  .projectPage__proposalImages,
+  .projectPage__gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .projectPage__proposalImages img,
+  .projectPage__gallery img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero__title {
+    font-size: clamp(32px, 8vw, 40px);
+  }
+
+  .hero__copy {
+    text-align: left;
+  }
+
+  .header {
+    gap: 10px;
+  }
+
+  .nav {
+    gap: 8px;
+  }
+
+  .nav__link {
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+
+  .projectPage__table th,
+  .projectPage__table td {
+    padding: 10px 12px;
+  }
+}
