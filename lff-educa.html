@@ -8,12 +8,12 @@
 		<link rel="stylesheet" href="./styles.css" />
 		<link rel="stylesheet" href="./lff-educa.css" />
 	</head>
-	<body>
+	<body class="project--lff">
 		<header class="header">
 			<a class="brand" href="./index.html#home" aria-label="Ir al inicio">
 				<img
 					class="brand__logo"
-					src="./imagenes/DUQUE 2 3.png"
+					src="./imagenes/DUQUE%202%203.png"
 					alt="Duque"
 					loading="eager"
 					decoding="async"
@@ -30,85 +30,102 @@
 		</header>
 
 		<main>
-			<section class="section hero projectPage__hero">
-				<div class="container projectPage__heroInner">
-					<div class="projectPage__heroCopy">
-						<p class="kicker">Caso de estudio</p>
-						<h1 class="hero__title">LFF Educa</h1>
-						<p class="hero__subtitle">Transformando la educación desde la base.</p>
-						<div class="hero__cta">
-							<a class="btn btn--primary" href="./index.html#projects">Volver a proyectos</a>
-							<a class="btn btn--ghost" href="./index.html#contact">Hablemos</a>
+			<section class="lffHero" aria-label="LFF Educa">
+				<div class="container lffHero__inner">
+					<div class="lffHero__copy">
+						<h1 class="lffHero__title">Transformando la educación desde la base</h1>
+						<p class="lffHero__text">
+							Educación bilingüe accesible que impulsa el futuro de niños en comunidades vulnerables.
+						</p>
+						<div class="lffHero__cta">
+							<a class="lffBtn" href="#problema">Conoce el proyecto</a>
 						</div>
 					</div>
-					<div class="projectPage__heroCard">
-						<div class="projectPage__badge project__media--teal">LFF Educa</div>
-						<div class="projectPage__facts">
-							<div class="card">
-								<h3 class="card__title">Rol</h3>
-								<p class="card__text">UI/UX · Investigación · Diseño visual</p>
-							</div>
-							<div class="card">
-								<h3 class="card__title">Enfoque</h3>
-								<p class="card__text">Educación bilingüe y aprendizaje STEAM</p>
-							</div>
-							<div class="card">
-								<h3 class="card__title">Estado</h3>
-								<p class="card__text">Propuesta / Prototipo</p>
-							</div>
-						</div>
+					<div class="lffHero__media" aria-hidden="true">
+						<img class="lffMockup lffMockup--hero" src="./imagenes/educambio/muckup2.png" alt="" />
 					</div>
 				</div>
 			</section>
 
-			<section class="section">
-				<div class="container projectPage__content">
-					<div class="projectPage__twoCol">
-						<article class="panel">
-							<h2 class="section__title">Problema</h2>
-							<p class="panel__text">
-								Miles de niños en comunidades vulnerables no tienen acceso a educación bilingüe de calidad ni a
-								herramientas para competir en el mundo actual.
-							</p>
+			<section id="problema" class="lffSection">
+				<div class="container lffRow lffRow--problem">
+					<div class="lffText">
+						<h2 class="lffHeading">PROBLEMA</h2>
+						<p class="lffBody">
+							Miles de niños en comunidades vulnerables no tienen acceso a educación bilingüe de calidad ni a
+							herramientas para competir en el mundo actual.
+						</p>
+					</div>
+					<div class="lffMedia">
+						<img class="lffMockup lffMockup--pair" src="./imagenes/educambio/muckup1.png" alt="Mockups de problema" />
+					</div>
+				</div>
+			</section>
+
+			<section id="solucion" class="lffSection lffSection--muted">
+				<div class="container lffRow lffRow--reverse lffRow--solution">
+					<div class="lffMedia">
+						<img class="lffMockup lffMockup--single" src="./imagenes/educambio/muckup4.png" alt="Mockup de solución" />
+					</div>
+					<div class="lffText lffText--right">
+						<h2 class="lffHeading">SOLUCIÓN</h2>
+						<p class="lffBody">
+							Consiste la familia integra educación bilingüe y contenido STEAM, con seguimiento del progreso para un
+							mundo donde la tecnología esté al alcance de todos.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="impacto" class="lffSection">
+				<div class="container lffRow lffRow--impact">
+					<div class="lffText">
+						<h2 class="lffHeading">IMPACTO</h2>
+						<p class="lffBody">Más que educación, generamos transformación social.</p>
+						<ul class="lffBullets">
+							<li>Mejora en habilidades académicas</li>
+							<li>Mayor acceso a la educación bilingüe</li>
+							<li>Desarrollo personal y liderazgo</li>
+						</ul>
+					</div>
+					<div class="lffMedia">
+						<img class="lffMockup lffMockup--pair" src="./imagenes/educambio/muckup3.png" alt="Mockups de impacto" />
+					</div>
+				</div>
+			</section>
+
+			<section id="funcionalidades" class="lffSection lffSection--features">
+				<div class="container">
+					<h2 class="lffHeading lffHeading--center">FUNCIONALIDADES</h2>
+
+					<div class="lffFeatures">
+						<article class="lffFeature">
+							<img class="lffFeature__img" src="./imagenes/educambio/muckup4.3.png" alt="Educación bilingüe" />
+							<h3 class="lffFeature__title">Educación bilingüe</h3>
+							<p class="lffFeature__text">Formación en inglés con ejercicios prácticos y actividades interactivas.</p>
 						</article>
-						<article class="panel">
-							<h2 class="section__title">Solución</h2>
-							<p class="panel__text">
-								Plataforma educativa con contenido bilingüe y actividades STEAM, acompañada de seguimiento del estudiante
-								y recursos comunitarios.
-							</p>
+						<article class="lffFeature">
+							<img class="lffFeature__img" src="./imagenes/educambio/muckup4.2.png" alt="Aprendizaje STEAM" />
+							<h3 class="lffFeature__title">Aprendizaje STEAM</h3>
+							<p class="lffFeature__text"
+								>Integración de ciencia, tecnología, ingeniería, arte y matemáticas en la app.</p
+							>
+						</article>
+						<article class="lffFeature">
+							<img class="lffFeature__img" src="./imagenes/educambio/muckup4.png" alt="Seguimiento del estudiante" />
+							<h3 class="lffFeature__title">Seguimiento del estudiante</h3>
+							<p class="lffFeature__text">Monitoreo constante del desempeño y evaluación de habilidades.</p>
+						</article>
+						<article class="lffFeature">
+							<img class="lffFeature__img" src="./imagenes/educambio/muckup4.1.png" alt="Impacto comunitario" />
+							<h3 class="lffFeature__title">Impacto comunitario</h3>
+							<p class="lffFeature__text">Conexión entre familias, aprendizaje colaborativo y comunidad.</p>
 						</article>
 					</div>
 
-					<article class="panel">
-						<h2 class="section__title">Funcionalidades</h2>
-						<div class="grid grid--3">
-							<div class="list">
-								<h3 class="list__title">Educación bilingüe</h3>
-								<ul class="list__items">
-									<li>Lecciones y práctica</li>
-									<li>Evaluaciones</li>
-									<li>Progreso</li>
-								</ul>
-							</div>
-							<div class="list">
-								<h3 class="list__title">Aprendizaje STEAM</h3>
-								<ul class="list__items">
-									<li>Proyectos</li>
-									<li>Retos</li>
-									<li>Recursos</li>
-								</ul>
-							</div>
-							<div class="list">
-								<h3 class="list__title">Seguimiento</h3>
-								<ul class="list__items">
-									<li>Reportes</li>
-									<li>Recomendaciones</li>
-									<li>Alertas</li>
-								</ul>
-							</div>
-						</div>
-					</article>
+					<div class="lffFinal">
+						<img class="lffMockup lffMockup--final" src="./imagenes/educambio/final.png" alt="Mockups finales" />
+					</div>
 				</div>
 			</section>
 		</main>

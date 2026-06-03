@@ -1,3 +1,251 @@
 :root {
   color-scheme: dark;
 }
+
+html,
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html {
+  background: #0d2037;
+}
+
+.project--emprende {
+  --euBg: #0d2037;
+  --euText: rgba(255, 255, 255, 0.92);
+  --euMuted: rgba(255, 255, 255, 0.72);
+  --euLine: rgba(255, 255, 255, 0.12);
+  --euAccent: #ff2b4f;
+  background: var(--euBg);
+  color: var(--euText);
+}
+
+body.project--emprende {
+  background: var(--euBg);
+}
+
+.project--emprende .footer {
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.euHero {
+  padding: 76px 0 36px 0;
+}
+
+.euHero__inner {
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+}
+
+.euHero__copy {
+  text-align: center;
+  max-width: 70ch;
+}
+
+.euHero__title {
+  margin: 0;
+  font-size: clamp(44px, 5vw, 68px);
+  letter-spacing: 0.14em;
+  font-weight: 900;
+  color: var(--euAccent);
+}
+
+.euHero__subtitle {
+  margin: 10px 0 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+.euHero__text {
+  margin: 14px auto 0 auto;
+  max-width: 62ch;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 23px;
+  line-height: 1.7;
+}
+
+.euHero__cta {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.euBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.euBtn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.26);
+}
+
+.euBtn:not(.euBtn--primary):hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.euBtn--primary {
+  border-color: rgba(255, 43, 79, 0.7);
+  background: linear-gradient(180deg, rgba(255, 43, 79, 0.22), rgba(255, 43, 79, 0.12));
+}
+
+.euBtn--primary:hover {
+  transform: none;
+  border-color: rgba(255, 43, 79, 0.7);
+  background: linear-gradient(180deg, rgba(255, 43, 79, 0.22), rgba(255, 43, 79, 0.12));
+}
+
+.euSection {
+  padding: 54px 0;
+}
+
+.euRow {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.euSection--reverse .euRow {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.euText {
+  max-width: 56ch;
+}
+
+.euText--right {
+  justify-self: end;
+  text-align: right;
+}
+
+.euHeading {
+  margin: 0 0 14px 0;
+  font-size: 24px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.euHeading--center {
+  text-align: center;
+}
+
+.euBody {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.euRow--problem .euBody {
+  margin-top: 70px;
+  max-width: 52ch;
+}
+
+.euRow--impact .euBody {
+  max-width: 52ch;
+}
+
+.euMedia {
+  display: grid;
+  justify-items: center;
+}
+
+.euMockup {
+  width: min(560px, 100%);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 28px 44px rgba(0, 0, 0, 0.35));
+}
+
+.euMockup--problem {
+  width: min(582px, 100%);
+}
+
+.euMockup--solution {
+  width: min(560px, 100%);
+}
+
+.euMockup--impact {
+  width: min(480px, 100%);
+}
+
+.euSection--features {
+  padding-top: 64px;
+}
+
+.euFeatures {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.euFeature__img {
+  width: min(220px, 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto 12px auto;
+  filter: drop-shadow(0 24px 36px rgba(0, 0, 0, 0.35));
+}
+
+.euFeature__title {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.euFeature__text {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+
+.euFinal {
+  margin-top: 26px;
+  display: grid;
+  justify-items: center;
+}
+
+.euMockup--final {
+  width: min(980px, 100%);
+}
+
+@media (max-width: 980px) {
+
+  .euRow,
+  .euSection--reverse .euRow {
+    grid-template-columns: 1fr;
+  }
+
+  .euText--right {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .euRow--problem .euBody {
+    margin-top: 16px;
+  }
+
+  .euFeatures {
+    grid-template-columns: 1fr;
+  }
+}

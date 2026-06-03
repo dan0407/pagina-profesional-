@@ -51,9 +51,10 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 16px 20px;
-  background: rgba(11, 12, 16, 0.72);
+  background: rgb(11 12 16);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .brand {
@@ -216,6 +217,9 @@ a {
 .btn:hover {
   transform: translateY(-1px);
   border-color: rgba(255, 255, 255, 0.24);
+}
+
+.btn:not(.btn--primary):hover {
   background: rgba(255, 255, 255, 0.06);
 }
 
@@ -225,7 +229,9 @@ a {
 }
 
 .btn--primary:hover {
-  border-color: rgba(255, 64, 64, 0.75);
+  transform: none;
+  border-color: rgba(255, 64, 64, 0.55);
+  background: linear-gradient(180deg, rgba(255, 64, 64, 0.22), rgba(255, 64, 64, 0.12));
 }
 
 .btn--ghost {
