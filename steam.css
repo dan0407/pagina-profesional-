@@ -8,38 +8,40 @@ body.project--steam {
 }
 
 .project--steam .steamPage {
-  padding: 54px 0 92px;
+  padding: 60px 0 100px;
 }
 
 .project--steam .steamSheet {
-  width: min(980px, calc(100% - 44px));
+  width: min(1100px, calc(100% - 48px));
   margin-inline: auto;
   display: grid;
-  gap: 64px;
+  gap: 80px;
 }
 
 .project--steam .steamRow {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
-  gap: 54px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
+  align-items: center;
 }
 
 .project--steam .steamRow--hero {
   align-items: center;
+  gap: 52px;
 }
 
 .project--steam .steamRow--paired {
-  align-items: start;
+  align-items: stretch;
+  gap: 52px;
 }
 
 .project--steam .steamRow--impact {
-  gap: 28px 44px;
+  gap: 24px 40px;
 }
 
 .project--steam .steamCol {
   display: grid;
-  gap: 12px;
+  gap: 18px;
   align-content: start;
 }
 
@@ -54,43 +56,47 @@ body.project--steam {
 
 .project--steam .steamTitle {
   margin: 0 0 16px 0;
-  font-size: clamp(30px, 3.4vw, 42px);
-  line-height: 1.14;
-  letter-spacing: 0.06em;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
   font-weight: 800;
 }
 
 .project--steam .steamHeading {
-  margin: 0 0 14px 0;
-  letter-spacing: 0.22em;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.88);
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+\n
 }
 
 .project--steam .steamText {
   margin: 0;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.75;
-  font-size: 14px;
-  max-width: 60ch;
+  font-size: 15px;
+  max-width: 65ch;
 }
 
 .project--steam .steamList {
-  margin: 14px 0 0 0;
-  padding-left: 18px;
-  color: rgba(255, 255, 255, 0.9);
+  margin: 12px 0 0 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.88);
   line-height: 1.75;
-  font-size: 14px;
+  font-size: 15px;
+  list-style: disc;
 }
 
 .project--steam .steamLogo {
-  width: min(220px, 62vw);
+  width: min(280px, 70vw);
   aspect-ratio: 1;
   border-radius: 999px;
   overflow: hidden;
-  box-shadow: none;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
   border: 0;
   background: transparent;
   display: grid;
@@ -98,7 +104,7 @@ body.project--steam {
 }
 
 .project--steam .steamLogo--end {
-  width: min(260px, 70vw);
+  width: min(320px, 85vw);
 }
 
 .project--steam .steamLogo__img {
@@ -107,47 +113,52 @@ body.project--steam {
   object-fit: contain;
   object-position: center;
   transform: none;
-  mix-blend-mode: screen;
+  mix-blend-mode: normal;
 }
 
 .project--steam .steamMock {
-  border-radius: 0;
-  overflow: visible;
+  border-radius: 8px;
+  overflow: hidden;
   background: transparent;
   border: 0;
-  box-shadow: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   max-width: 100%;
 }
 
 .project--steam .steamMock--photo {
-  justify-self: end;
-  max-width: 520px;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .project--steam .steamMock--persona {
-  justify-self: start;
-  max-width: 460px;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .project--steam .steamMock--chart {
-  justify-self: end;
-  max-width: 380px;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .project--steam .steamMock--interface {
-  justify-self: start;
-  max-width: 640px;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .project--steam .steamMock--proposal {
-  margin-top: 18px;
-  max-width: 380px;
-  justify-self: end;
+  margin-top: 0;
+  max-width: 100%;
+  justify-self: center;
 }
 
 .project--steam .steamMock--learning {
-  justify-self: end;
-  max-width: 640px;
+  justify-self: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .project--steam .steamMock__img {
@@ -163,26 +174,24 @@ body.project--steam {
 }
 
 .project--steam .steamMock--proposal {
-  height: 240px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .project--steam .steamMock--proposal .steamMock__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: right top;
 }
 
 .project--steam .steamMock--learning {
-  height: 240px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .project--steam .steamMock--learning .steamMock__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: left bottom;
 }
 
@@ -190,23 +199,24 @@ body.project--steam {
   height: auto;
   object-fit: cover;
   object-position: center top;
+  max-width: 100%;
 }
 
 .project--steam .steamCard {
-  border-radius: 0;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(12, 26, 56, 0.12);
-  box-shadow: none;
-  padding: 18px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(12, 26, 56, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 24px;
   color: #0b1a33;
 }
 
 .project--steam .steamCard__title {
-  margin: 0 0 12px 0;
-  letter-spacing: 0.18em;
+  margin: 0 0 14px 0;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 11px;
+  font-weight: 900;
   color: #1f57c9;
 }
 
@@ -214,17 +224,18 @@ body.project--steam {
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: 4px;
   background: #ffffff;
 }
 
 .project--steam .steamTable th,
 .project--steam .steamTable td {
   padding: 12px 12px;
-  border: 1px solid rgba(12, 26, 56, 0.12);
+  border: 1px solid rgba(12, 26, 56, 0.08);
   text-align: left;
   color: rgba(11, 26, 51, 0.86);
   font-size: 13px;
+  font-weight: 500;
 }
 
 .project--steam .steamTable th {
@@ -242,38 +253,43 @@ body.project--steam {
 @media (max-width: 900px) {
   .project--steam .steamRow {
     grid-template-columns: 1fr;
+    gap: 44px;
   }
 
   .project--steam .steamCol--full {
     grid-column: auto;
   }
+
+  .project--steam .steamSheet {
+    gap: 72px;
+  }
 }
 
 @media (max-width: 620px) {
   .project--steam .steamPage {
-    padding: 44px 0 76px;
+    padding: 50px 0 80px;
   }
 
   .project--steam .steamSheet {
     width: min(980px, calc(100% - 34px));
-    gap: 52px;
+    gap: 60px;
   }
 
   .project--steam .steamRow {
-    gap: 26px;
+    gap: 32px;
   }
 
-  .project--steam .steamMock--proposal {
-    max-width: 100%;
-    height: 220px;
+  .project--steam .steamTitle {
+    font-size: clamp(28px, 3vw, 38px);
   }
 
-  .project--steam .steamMock--learning {
-    height: 220px;
+  .project--steam .steamText {
+    font-size: 14px;
   }
 
   .project--steam .steamTable th,
   .project--steam .steamTable td {
-    padding: 10px 10px;
+    padding: 10px 9px;
+    font-size: 12px;
   }
 }
